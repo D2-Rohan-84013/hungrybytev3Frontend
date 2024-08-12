@@ -1,0 +1,144 @@
+/* Navbar Styles */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    padding: 15px 30px;
+    background-color: white;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+}
+
+.navbar-logo a {
+    font-size: 28px;
+    font-weight: bold;
+    text-decoration: none;
+    color: #000;
+}
+
+.navbar-links a {
+    margin-left: 30px;
+    text-decoration: none;
+    color: #555;
+    font-weight: 500;
+    font-size: 18px;
+}
+
+.navbar-links a:hover {
+    color: #000;
+}
+
+/* Adjust the content below the navbar */
+.home-container {
+    padding-top: 100px;
+    /* More space below the navbar */
+    max-width: 1400px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* Hero Section */
+.hero-section {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.hero-content {
+    flex: 1;
+    max-width: 700px;
+}
+
+.sun-image {
+    width: 120px;
+    height: 120px;
+    margin-bottom: 30px;
+}
+
+.hero-content h1 {
+    font-size: 80px;
+    /* Larger headline */
+    margin: 0;
+    font-weight: bold;
+    line-height: 1.2;
+}
+
+.hero-content p {
+    font-size: 32px;
+    /* Larger subheading */
+    margin: 15px 0 40px;
+    color: #555;
+}
+
+.hero-buttons .order-now-btn,
+.hero-buttons .view-more-btn {
+    background-color: #d9534f;
+    color: white;
+    border: none;
+    padding: 20px 40px;
+    /* Larger buttons */
+    margin-right: 15px;
+    cursor: pointer;
+    font-size: 22px;
+    /* Larger button text */
+    transition: background-color 0.3s ease;
+}
+
+.hero-buttons .order-now-btn:hover {
+    background-color: #c94c4c;
+}
+
+.hero-buttons .view-more-btn {
+    background-color: white;
+    color: #d9534f;
+    border: 2px solid #d9534f;
+}
+
+.hero-buttons .view-more-btn:hover {
+    background-color: #f8f8f8;
+}
+
+.hero-image {
+    flex: 1;
+    text-align: right;
+}
+
+.hero-image img {
+    width: 100%;
+    max-width: 600px;
+    /* Larger image */
+}
+
+@media (max-width: 768px) {
+    .home-container {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        padding-top: 120px;
+        /* Extra padding for smaller screens */
+    }
+
+    .hero-image {
+        margin-top: 40px;
+    }
+
+    .hero-content h1 {
+        font-size: 60px;
+        /* Adjusted for smaller screens */
+    }
+
+    .hero-content p {
+        font-size: 28px;
+    }
+
+    .hero-buttons .order-now-btn,
+    .hero-buttons .view-more-btn {
+        width: 100%;
+        max-width: 300px;
+        margin-bottom: 15px;
+    }
+}
